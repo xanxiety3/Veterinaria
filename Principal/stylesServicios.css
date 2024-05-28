@@ -1,0 +1,138 @@
+/* estilos cabecera */
+.cabecera span{
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px;
+     text-align:center ;
+      margin-top: 60px; 
+      text-align: center;
+       font-size: 25px;
+}
+
+body{
+    background-color: #F0EBEB; 
+    margin: 0;
+}
+
+.menu {
+   background-color:#0A4BAF;
+   margin-top: -9px;
+}
+
+.menu h4{
+    display: inline-block ; 
+    margin-left: 1250px; 
+    vertical-align:top;
+     margin-top: 25px;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+
+
+
+
+.servicios{
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+
+.servicios img{
+    width: 30%;
+    margin-top: 4%;
+    margin-left: 12%;
+}
+
+#primerservicio{
+    margin-left: 12%;
+}
+#servicio4{
+    width: 34%;
+    margin-left: 8%;
+
+}
+
+
+
+/* estilos ventana flotante */
+.ventana{
+    width: 30%;
+   align-items: center;
+   position: absolute;
+   margin-top: 5%;
+   margin-left: 34%;
+   display: none;
+   position: fixed;
+}
+
+#cerrar{
+    position: absolute;
+    width: 7%;
+    margin-left: 90%;
+}
+
+#info{
+    width: 100%;
+}
+
+#botonInfo{
+    width: 50%;
+    position: absolute;
+    margin-top: 80%;
+    margin-left: -75%;
+   
+}
+
+
+/* estilos pie de pagina */
+
+.pieDPag{
+    background-color: #D7D1D1;
+}
+
+.pieDPag iframe{
+
+    margin-left: 15.5%; 
+}
+#titulo{
+    display: inline-block;
+    margin-left: 19%;
+}
+#tCon{
+  
+    margin-top: -2%;
+    text-align: center;
+   
+ 
+}
+
+.contenido {
+   text-align: center;
+   margin-top: -12%;
+   font-size: 23px;
+ 
+}
+
+#logoPie{
+    display: inline-block;
+    margin-left: 65%;
+    margin-top: -10%;
+
+}
+
+.menupie h4{
+    display: inline-block;
+    margin-top: -100%;
+    color: #433131;
+    font-size: 23px;
+    margin-left: 3%;
+   
+}
+.redespie{
+    margin-top: -2%;
+    margin-left: 12%;
+}
+.pieDPag img{
+    margin-top: -13%;
+}

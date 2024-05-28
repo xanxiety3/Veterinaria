@@ -1,0 +1,132 @@
+/* estilos cabecera */
+.cabecera span{
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px;
+     text-align:center ;
+      margin-top: 60px; 
+      text-align: center;
+       font-size: 25px;
+}
+
+body{
+    background-color: #F0EBEB; 
+    margin: 0;
+}
+
+
+.menu {
+   background-color:#0A4BAF;
+   margin-top: -9px;
+}
+
+.menu h4{
+    display: inline-block ; 
+    margin-left: 1250px; 
+    vertical-align:top;
+     margin-top: 25px;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+
+/* slider */
+
+.slider-frame{
+    width: 100%;
+    height: auto;
+  
+    overflow: hidden;
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slider 15s infinite alternate ease-in-out ;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 150%;
+}
+
+@keyframes slider {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+/* estilos index */
+
+
+.citas img{
+    margin-left: 15%;
+width: 70%;
+}
+
+.personal img{
+    width: 100%;
+    margin-top: 4%;
+}
+/* estilos pie de pagina */
+
+.pieDPag{
+    background-color: #D7D1D1;
+}
+
+.pieDPag iframe{
+
+    margin-left: 15.5%; 
+}
+#titulo{
+    display: inline-block;
+    margin-left: 19%;
+}
+#tCon{
+  
+    margin-top: -2%;
+    text-align: center;
+   
+ 
+}
+
+.contenido {
+   text-align: center;
+   margin-top: -12%;
+   font-size: 23px;
+ 
+}
+
+#logoPie{
+    display: inline-block;
+    margin-left: 65%;
+    margin-top: -10%;
+
+}
+
+.menupie h4{
+    display: inline-block;
+    margin-top: -100%;
+    color: #433131;
+    font-size: 23px;
+    margin-left: 3%;
+   
+}
+.redespie{
+    margin-top: -2%;
+    margin-left: 12%;
+}
+.pieDPag img{
+    margin-top: -13%;
+}

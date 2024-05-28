@@ -1,0 +1,179 @@
+/* estilos cabecera */
+.cabecera span{
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px;
+     text-align:center ;
+      margin-top: 60px; 
+      text-align: center;
+       font-size: 25px;
+}
+
+body{
+    background-color: #F0EBEB; 
+    margin: 0;
+}
+
+
+.menu {
+   background-color:#0A4BAF;
+   margin-top: -9px;
+}
+
+.menu h4{
+    display: inline-block ; 
+    margin-left: 1250px; 
+    vertical-align:top;
+     margin-top: 25px;
+    color: aliceblue;
+    font-size: 25px;
+}
+/* estilos pagina de registro */
+#titulo1{
+    width: 25%;
+margin-top: 2%;
+margin-left: 35.5%;
+margin-bottom: -2.5%;
+  
+}
+
+
+#titulo2{
+    width: 25%;
+margin-top: -256%;
+margin-left: 35.5%;
+margin-bottom: 6%;
+  
+}
+.FormDueño{
+    margin-top: 30px;
+    margin-left: 30%;
+    width: 1000px;
+    height: 750px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+   
+}
+
+#mascota{
+    margin-top: -7.5%;
+}
+#nombre1{
+    margin-top: 9%;
+}  
+
+.FormDueño h2{
+    margin-top: 3%;
+    margin-left: 36%;
+    font-size: 30px;
+   
+}
+#caja1{
+    margin-bottom: 4%;
+}
+.FormDueño input, select{
+    font-size: 18px;
+    width: 350px;
+    height: 30.5px;
+    margin-left: 30%;
+    margin-top: -2%;
+}
+
+#pata1{
+    width: 8%;
+    display: inline-block;
+    margin-left: 28%;
+    margin-bottom: -15%;
+}
+.patas{
+    width: 8%;
+    display: inline-block;
+    margin-left: 28%;
+    margin-bottom: -9%;
+    ;
+}
+
+#pata3D{
+    margin-top: -15%;
+    margin-left: 55%;
+    width: 25%;
+    
+}
+#gatoimg{
+    width: 12%;
+    margin-top: -10%;
+    margin-left: 20%;
+    
+}
+.gato{
+    margin-top: 10%;
+    margin-left: -18%;
+}
+
+.perro{
+    margin-top: -4%;
+    margin-left: 24%;
+}
+
+#perroimg{
+    width: 12%;
+    margin-top: -45%;
+    margin-bottom: 1%;
+    margin-left: 50%;}
+
+#mascota{
+    height: 820px;
+}
+
+/* estilos pie de pagina */
+
+.pieDPag{
+    background-color: #D7D1D1;
+}
+
+.pieDPag iframe{
+
+    margin-left: 15.5%; 
+}
+#titulo{
+    display: inline-block;
+    margin-left: 19%;
+}
+#tCon{
+  
+    margin-top: -2%;
+    text-align: center;
+   
+ 
+}
+
+.contenido {
+   text-align: center;
+   margin-top: -12%;
+   font-size: 23px;
+ 
+}
+
+#logoPie{
+    display: inline-block;
+    margin-left: 65%;
+    margin-top: -10%;
+
+}
+
+.menupie h4{
+    display: inline-block;
+    margin-top: -100%;
+    color: #433131;
+    font-size: 23px;
+    margin-left: 3%;
+   
+}
+.redespie{
+    margin-top: -2%;
+    margin-left: 12%;
+}
+.pieDPag img{
+    margin-top: -13%;
+}
