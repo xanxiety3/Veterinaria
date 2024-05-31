@@ -1,11 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartar CItas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylescitas.css">
 </head>
 <body>
-    
+
+  <div class="slider-frame">
+
+    <ul>
+       <li>
+        <table class="calendario">
+    <thead>
+      <caption>Mayo 2024</caption>
+      <tr>
+        <th>Lu</th>
+        <th>Ma</th>
+        <th>Mie</th>
+        <th>Ju</th>
+        <th>Vi</th>
+        <th>Sá</th>
+        <th>Do</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td>31</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+ </li>
+  
+   <li>
+    <table class="calendario">
+    <thead>
+      <caption>Junio 2024</caption>
+      <tr>
+        <th>Lu</th>
+        <th>Ma</th>
+        <th>Mie</th>
+        <th>Ju</th>
+        <th>Vi</th>
+        <th>Sá</th>
+        <th>Do</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td>26</td>
+        <td>27</td>
+        <td>28</td>
+        <td>29</td>
+        <td>30</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</li>
+</ul>
+
+</div>
+
+<div class="slider-controls">
+  <button id="prevBtn">Anterior</button>
+  <button id="nextBtn">Siguiente</button>
+</div>
+
+
+<script>
+
+  const slider = document.querySelector('.slider-frame ul');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  let slideIndex = 0;
+
+
+  function Anterior() {
+    if (slideIndex < slider.children.length - 1) {
+      slideIndex++;
+      slider.style.transform = `translateX(-${slideIndex * 50}%)`;
+    }
+  }
+
+ 
+  function Siguiente() {
+    if (slideIndex > 0) {
+      slideIndex--;
+      slider.style.transform = `translateX(-${slideIndex * 50}%)`;
+    }
+  }
+
+//  botones
+  prevBtn.addEventListener('click', Siguiente);
+  nextBtn.addEventListener('click', Anterior);
+</script>
+
 </body>
 </html>

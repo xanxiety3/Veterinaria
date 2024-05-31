@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="stylesIndex.css">
 </head>
 <body >
+
 <!--  Acá estan todas las imagenes y texto que lleva la primera linea de la cabecera-->
 <div class="cabecera">
     <a href="index.html"><img src="image/logoOficial.png" alt="logo sin letras" style="display: inline-block; width: 5%; height: 5%; margin-left: 80px;"></a>
@@ -15,8 +16,50 @@
 
     <img src="image/logoInicioSesion.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
         margin-left: 600px ; margin-top: 45px; width: 2%;">
-   <span >
-    INICIAR SESION</span>
+   <a href="javascript:abrir()"><span >INICIAR SESION</span></a>
+
+<!-- inicio de sesion -->
+<div class="contenedor" id="contenedor">
+    <!-- <a href="javascript:cerrar()"><img src="image/cancelar.png" id="cerrar"></a> -->
+    <div class="imagenLogin">
+        <img src="image/perroLogin.png" alt="cachorro">
+
+    </div>
+    <div class="login">
+        <form action="#" class="formulario">
+            <img src="image/logoOficial.png" alt="logo" >
+            <h2>USUARIO</h2>
+            <img class="patas" src="image/huellaazul.png" id="pata1">
+            <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
+            <br/>
+            <H2>CONTRASEÑA</H2>
+            <img class="patas" src="image/huellaazul.png"  id="pata2">
+            <input type="password" name="contrasenia" placeholder="Ingrese su contraseña" required>
+            <br/>
+            <input type="submit" name ="boton" id="btnInicio"  value="Iniciar sesion"></input> 
+          
+            <a class="pieLogin" href="registrate.html"><h2 >¿Olvidó su contraseña?</h2></a>
+            <a class="pieLogin" href="registrate.html"><h2>¡Registrate aquí!</h2></a>
+            <a class="pieLogin" href="javascript:cerrar()"> <h2> CERRAR</h2></a>
+
+        </form>
+
+    </div>
+
+    <!-- PONER EL WASA FLOTANTE  -->
+
+</div>
+
+<script>
+
+    function abrir(){
+        document.getElementById("contenedor").style.display="grid";
+    }
+    function cerrar(){
+        document.getElementById("contenedor").style.display="none";
+    }
+    </script>
+
 
     <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
         <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
@@ -51,6 +94,8 @@
 </div>
 <!-- AQUI TERMINA LA SEGUNDA PARTE DE LA CABECERA -->
 
+
+
 <!-- ESTE ES EL SLIDER -->
 <div class="slider-frame">
 
@@ -58,13 +103,12 @@
        <li><img src="image/BANNERpromo2.jpg" alt="promo1"></li>
        <li><img src="image/slider1.png" alt="promo2"></li>      
        <li><img src="image/banner3.jpg" alt="promo3"></li>
-        <li><img src="image/perrobanner.jpg" alt="promo4"></li>
+        <li><img src="image/slider2.png" alt="promo4"></li>
        <li><img src="image/banner4.jpg" alt="promo5"></li>
 
          
     </ul>
 </div>
-<img src="image/BANNERpromo2.jpg" alt="primera imagen del slider" style=" height: 1%; width: 100%; vertical-align: top; margin-top: -1px;">
 
 <br>
 <br>
@@ -106,6 +150,7 @@
     <img src="image/consejos.png" style="width: 80%; margin-left: 200px;">
  </div>
 <!-- pie de pagina -->
+
  <div class="pieDPag">
     <!-- <img src="image/piedePag .png" style="width: 100%;"> -->
     <div>
@@ -113,7 +158,7 @@
     <h2 id="titulo">¡ ENCUENTRANOS !</h2>
     <h2 id="tCon">Animals House</h2>
  </div> 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4049135.6195077556!2d-76.18471254861089!3d7.657970647986431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7f900194bf%3A0x8c3d01e423f55d9a!2sAnimal%20House!5e0!3m2!1ses-419!2sco!4v1716379362237!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4049135.6195077556!2d-76.18471254861089!3d7.657970647986431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7f900194bf%3A0x8c3d01e423f55d9a!2sAnimal%20House!5e0!3m2!1ses-419!2sco!4v1716379362237!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <div>
     
