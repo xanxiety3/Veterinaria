@@ -4,149 +4,325 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="stylescitas.css">
+  <link rel="stylesheet" href="stylesCitas.css">
 </head>
 <body>
-
-  <div class="slider-frame">
-
-    <ul>
-       <li>
-        <table class="calendario">
-    <thead>
-      <caption>Mayo 2024</caption>
-      <tr>
-        <th>Lu</th>
-        <th>Ma</th>
-        <th>Mie</th>
-        <th>Ju</th>
-        <th>Vi</th>
-        <th>Sá</th>
-        <th>Do</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>10</td>
-        <td>11</td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-        <td>16</td>
-        <td>17</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>19</td>
-        <td>20</td>
-        <td>21</td>
-        <td>22</td>
-        <td>23</td>
-        <td>24</td>
-        <td>25</td>
-      </tr>
-      <tr>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-        <td>29</td>
-        <td>30</td>
-        <td>31</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
- </li>
   
-   <li>
-    <table class="calendario">
-    <thead>
-      <caption>Junio 2024</caption>
-      <tr>
-        <th>Lu</th>
-        <th>Ma</th>
-        <th>Mie</th>
-        <th>Ju</th>
-        <th>Vi</th>
-        <th>Sá</th>
-        <th>Do</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>10</td>
-        <td>11</td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-        <td>16</td>
-        <td>17</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>19</td>
-        <td>20</td>
-        <td>21</td>
-        <td>22</td>
-        <td>23</td>
-        <td>24</td>
-        <td>25</td>
-      </tr>
-      <tr>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-        <td>29</td>
-        <td>30</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</li>
-</ul>
+
+
+<!--  Acá estan todas las imagenes y texto que lleva la primera linea de la cabecera-->
+<div class="cabecera">
+    <a href="index.html"><img src="image/logoOficial.png" alt="logo sin letras" style="display: inline-block; width: 5%; height: 5%; margin-left: 80px;"></a>
+    <a href="index.html">
+        <span >ANIMALS HOUSE</span></a>
+
+    <img src="image/logoInicioSesion.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
+        margin-left: 600px ; margin-top: 45px; width: 2%;">
+   <a href="javascript:abrir()"><span >INICIAR SESION</span></a>
+
+<!-- inicio de sesion -->
+<div class="contenedor" id="contenedor">
+    <!-- <a href="javascript:cerrar()"><img src="image/cancelar.png" id="cerrar"></a> -->
+    <div class="imagenLogin">
+        <img src="image/perroLogin.png" alt="cachorro">
+
+    </div>
+    <div class="login">
+        <form action="#" class="formulario">
+            <img src="image/logoOficial.png" alt="logo" >
+            <h2>USUARIO</h2>
+            <img class="patas" src="image/huellaazul.png" id="pata1">
+            <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
+            <br/>
+            <H2>CONTRASEÑA</H2>
+            <img class="patas" src="image/huellaazul.png"  id="pata2">
+            <input type="password" name="contrasenia" placeholder="Ingrese su contraseña" required>
+            <br/>
+            <input type="submit" name ="boton" id="btnInicio"  value="Iniciar sesion"></input> 
+          
+            <a class="pieLogin" href="registrate.html"><h2 >¿Olvidó su contraseña?</h2></a>
+            <a class="pieLogin" href="registrate.html"><h2>¡Registrate aquí!</h2></a>
+            <a class="pieLogin" href="javascript:cerrar()"> <h2> CERRAR</h2></a>
+
+        </form>
+
+    </div>
+
+    <!-- PONER EL WASA FLOTANTE  -->
 
 </div>
 
-<div class="slider-controls">
-  <button id="prevBtn">Anterior</button>
-  <button id="nextBtn">Siguiente</button>
-</div>
+<script>
 
+    function abrir(){
+        document.getElementById("contenedor").style.display="grid";
+    }
+    function cerrar(){
+        document.getElementById("contenedor").style.display="none";
+    }
+    </script>
+
+
+    <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
+        <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
+            margin-left: 800px ; margin-top: 45px; height: 3%; width: 3%;"></a>
+
+    <img src="image/Facebooknegro.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
+        margin-left: 10px ; margin-top: 45px;height: 3%; width: 3%;">
+
+    <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
+        margin-left: 15px ; margin-top: 50px; height: 2.5%; width: 2.5%;
+        
+        
+        
+         ">
+
+    <img src="image/WASANEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
+        margin-left: 15px ; margin-top: 45px; height: 2.8%; width: 2.8%; ">
+    <hr>
+</div>
+<!-- hasta acá termina la primera parte de la cabecera -->
+
+<!-- Aca comienza la segunda parte de la cabecera ( el menú de opciones) -->
+<div class="menu" >
+    <img src="image/telefonoAzul.png" alt="logo telefono azul" style=" 
+        margin-left: 95px ; margin-top: 8px; height: 2.8%; width: 2.8%;">
+    <h4 style= " display: inline-block ; margin-left: 10px; vertical-align:top; margin-top: 25px;">EMERGENCIA</h4>
+    <a href="registrate.html">
+        <h4>REGISTRATE</h4></a>
+    <a href="servicios.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">SERVICIOS</h4></a>
+    <a href="quienesSomos.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">QUIENES SOMOS</h4></a>
+    <a href="citas.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">CITAS</h4></a>
+</div>
+<!-- AQUI TERMINA LA SEGUNDA PARTE DE LA CABECERA -->
+
+<div class="apartarCitas">
+    <form>
+        <h1>Formulario de Cita</h1>
+
+        <div class="input-group">
+            <div class="form-item">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+            </div>
+
+            <div class="form-item">
+                <label for="tipoDoc">Tipo de documento</label>
+                <select id="tipoDoc" name="tipoDoc">
+                    <option value="cc">Cédula de Ciudadanía</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="form-item">
+                <label for="numDoc">Número de documento</label>
+                <input type="text" name="numDoc" id="numDoc" required placeholder="Ingrese su número de identificación">
+            </div>
+
+            <div class="form-item">
+                <label for="telefono">Contacto</label>
+                <input type="tel" name="telefono" id="telefono" required placeholder="Ingrese su número de contacto">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="form-item">
+                <label for="nombreMascota">Nombre de la Mascota</label>
+                <input type="text" name="nombreMascota" id="nombreMascota" required placeholder="Ingrese el nombre de su mascota">
+            </div>
+
+            <div class="form-item">
+                <label for="tipoServicio">Tipo de Servicio</label>
+                <select id="tipoServicio" name="tipoServicio">
+                    <option value="consulta">Consulta General</option>
+                    <option value="vacunacion">Vacunación</option>
+                    <option value="desparasitacion">Desparasitación</option>
+                    <option value="cirugia">Cirugía</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-item">
+                <label>Tipo de Mascota</label>
+                <div>
+                    <input type="radio" id="perro" name="tipoMascota" value="perro">
+                    <label for="perro">Perro</label>
+                    <input type="radio" id="gato" name="tipoMascota" value="gato">
+                    <label for="gato">Gato</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="form-item">
+                <label for="raza">Raza</label>
+                <input type="text" name="raza" id="raza" required placeholder="Ingrese la raza de su mascota">
+            </div>
+
+            <div class="form-item">
+                <label for="edad">Edad</label>
+                <input type="text" name="edad" id="edad" required placeholder="Ingrese la edad de su mascota">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <div class="form-item">
+                <label for="motivoConsulta">Motivo de Consulta</label>
+                <input type="text" name="motivoConsulta" id="motivoConsulta" required placeholder="Ingrese el motivo de la consulta">
+            </div>
+
+            <div class="form-item">
+                <label for="informacionAdicional">Información Adicional</label>
+                <textarea id="informacionAdicional" name="informacionAdicional" rows="4" placeholder="Ingrese información adicional"></textarea>
+            </div>
+        </div>
+
+        <button type="submit">Apartar Cita</button>
+    <div class="calendario1">
+
+        <div class="slider-frame">
+
+            <ul>
+                <li>
+                    <table class="calendario">
+                        <thead>
+                            <caption>Mayo 2024</caption>
+                                <tr>
+                                <th>Lu</th>
+                                <th>Ma</th>
+                                <th>Mie</th>
+                                <th>Ju</th>
+                                <th>Vi</th>
+                                <th>Sá</th>
+                                <th>Do</th>
+                            </tr>
+                        </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                        <td>11</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td>31</td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </li>
+                        
+                        <li>
+                            <table class="calendario">
+                            <thead>
+                            <caption>Junio 2024</caption>
+                            <tr>
+                                <th>Lu</th>
+                                <th>Ma</th>
+                                <th>Mie</th>
+                                <th>Ju</th>
+                                <th>Vi</th>
+                                <th>Sá</th>
+                                <th>Do</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </li>
+                        </ul>
+
+                                </div>
+
+        <div class="slider-controls">
+            <button id="prevBtn">Anterior</button>
+            <button id="nextBtn">Siguiente</button>
+        </div>
+    </div>
+</form>
+</div>
 
 <script>
 

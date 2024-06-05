@@ -5,52 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REGISTRATE</title>
     <link rel="stylesheet"  href="stylesRegistrate.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="image/logoOficial.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body >
+    
     <!--  Acá estan todas las imagenes y texto que lleva la primera linea de la cabecera-->
-    <div class="cabecera">
-        <a href="index.html"><img src="image/logoOficial.png" alt="logo sin letras" style="display: inline-block; width: 5%; height: 5%; margin-left: 80px;"></a>
-        <a href="index.html">
-            <span >ANIMALS HOUSE</span></a>
-    
-        <img src="image/logoInicioSesion.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 600px ; margin-top: 45px; width: 2%;">
-       <span >
-        INICIAR SESION</span>
-    
-        <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
-            <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-                margin-left: 800px ; margin-top: 45px; height: 3%; width: 3%;"></a>
-    
-        <img src="image/Facebooknegro.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 10px ; margin-top: 45px;height: 3%; width: 3%;">
-    
-        <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 15px ; margin-top: 50px; height: 2.5%; width: 2.5%;
-            
-            
-            
-             ">
-    
-        <img src="image/WASANEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 15px ; margin-top: 45px; height: 2.8%; width: 2.8%; ">
-        <hr>
+    <header class="cabecera">
+        <div class="logo">
+            <a href="index.html"><img class="claseLogo" src="image/logoOficial.png" alt="logo sin letras" id="logoCabecera" ></a>
+            <a href="index.html" >
+                <span id="animalhouse"  >ANIMALS HOUSE</span></a>    
+        </div>
+    <div class="inicioSesion">
+        <div >
+            <img src="image/logoInicioSesion.png" alt="logo inicio de sesion" class="imgSesion">
+        </div>
+        <a href="javascript:abrir()" id="iniciosesion"><span >INICIAR SESION</span></a>
+     
     </div>
-<!-- hasta acá termina la primera parte de la cabecera -->
-
-<!-- Aca comienza la segunda parte de la cabecera ( el menú de opciones) -->
-<div class="menu" >
-    <img src="image/telefonoAzul.png" alt="logo telefono azul" style=" 
-        margin-left: 95px ; margin-top: 8px; height: 2.8%; width: 2.8%;">
-    <h4 style= " display: inline-block ; margin-left: 10px; vertical-align:top; margin-top: 25px;">EMERGENCIA</h4>
-    <a href="registrate.html">
-        <h4>REGISTRATE</h4></a>
-    <a href="servicios.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">SERVICIOS</h4></a>
-    <a href="quienesSomos.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">QUIENES SOMOS</h4></a>
-    <a href="citas.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">CITAS</h4></a>
-</div>
-<!-- AQUI TERMINA LA SEGUNDA PARTE DE LA CABECERA -->
-
+    
+    
+    <div class="redes">
+        <div> 
+            <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
+            <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" class="imgRedes" ></a></div>
+        <div>    
+            <img src="image/Facebooknegro.png" alt="logo inicio de sesion" class="imgRedes Facebook">
+        </div>
+        <div>    
+            <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" class="imgRedes">
+        </div>
+        <div>    
+            <img src="image/WASANEGRO.png" alt="logo inicio de sesion" class="imgRedes">
+        </div>
+    </div>
+    </header>
+    <!-- hasta acá termina la primera parte de la cabecera -->
+    
+    <!-- Aca comienza la segunda parte de la cabecera ( el menú de opciones) -->
+    
+    <div class="apartadoMenu">
+        <div class="apartadoEmergencia">
+        <img src="image/telefonoAzul.png" alt="logo telefono azul" id="imgTelefono"> 
+        <h4 class="emergenciaTexto">EMERGENCIA</h4>
+       
+        </div>
+         <input type="checkbox"  id="check">
+            <label for="check" class="mostrarMenu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="registrate.html">REGISTRATE</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="quienesSomos.html">QUIENES SOMOS</a>
+            <a href="citas.html">CITAS</a>
+            <label for="check" class="esconderMenu">
+                &#215
+            </label>
+        </nav>
+    </div>
+    
+    <!-- AQUI TERMINA LA SEGUNDA PARTE DE LA CABECERA -->
+    
+    
 
 <!-- ESTO ES OFICIALMENTE LA SEGUNDA PANTALLA REGISTRO -->
 

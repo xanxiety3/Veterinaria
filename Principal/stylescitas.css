@@ -1,58 +1,283 @@
+* estilos cabecera */
+.cabecera span{
+    display: inline-block; 
+    vertical-align: top; 
+    margin-left: 10px;
+     text-align:center ;
+      margin-top: 60px; 
+      text-align: center;
+       font-size: 25px;
+}
+
+body{
+    background-color: #F0EBEB; 
+    margin: 0;
+}
+
+
+.menu {
+   background-color:#0A4BAF;
+   margin-top: -9px;
+}
+
+.menu h4{
+    display: inline-block ; 
+    margin-left: 1250px; 
+    vertical-align:top;
+     margin-top: 25px;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+.menu h4:hover{
+    transform:scale(1.1);
+    color: aqua;
+
+}
+
+
+
+
+
+/* estilos inicio de sesion  */
+
+
+/* estilos ventana flotante */
+.contenedor{
+
+    width: 45%;
+    justify-content: center;
+   align-items: center;
+   position: absolute;
+    height: 60%;
+   left: 30%;
+   top:25%;
+   position:fixed;
+   overflow: hidden;
+   display: grid;
+ 
+   grid-template-columns: 50% 50%;  
+
+     display: none; 
+    text-align: center;
+}
+
+.imageLogin{
+   width: 100%;
+}
+.imagenLogin img{
+ width: 100%;
+ height: 100%;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    display: inline-block;
+    background-color: #F0EBEB;
+    height: 100%;
+
+
+}
+
+.apartarCitas{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+form {
+  
+    padding: 20px;
+    
+
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.calendario1{
+    margin-left: 50%;
+    margin-top: 50%;
+    
+}
 
 
 .calendario{
-  margin-top: 2em;
-}
-
-.calendario th, .calendario td{
-  text-align: center;
-  padding: .2em .5em;
-  border: 1px solid black;
-}
-
-.calendario caption{
-  text-align: left;
-  margin-bottom: 5px;
-  font-variant: small-caps;
-  font-size: 20px;
-  letter-spacing: 5px;
-}
-
-.calendario td{
-  text-align: left;
-  font-size: .8em;
-  padding-bottom: 3em;
-  padding-right: 3em;
-}
-
-.calendario td:hover{
-  background-color: magenta;
-  cursor: pointer;
-  font-size: 1.6em;
-  text-align: center;
-  padding: 0;
-}
-
-
-.slider-frame{
-  width: 100%;
-  height: auto;
-margin-top: -0.8%;
-  overflow: hidden;
-}
-.slider-frame ul{
-  display: flex;
-  padding: 0;
-  width: 500%;
-  animation: slider 15s infinite alternate ease-in-out ;
-}
-.slider-frame li{
-  list-style: none;
-  width: 100%;
-}
-
-  .slider-controls {
-    margin-top: 10px;
-    text-align: left;
+    margin-top: 2em;
+    
+    
   }
+  
+  .calendario th, .calendario td{
+    text-align: center;
+    padding: .2em .5em;
+    border: 1px solid black;
+  }
+  
+  .calendario caption{
+    text-align: left;
+    margin-bottom: 5px;
+    font-variant: small-caps;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+  
+  .calendario td{
+    text-align: left;
+    font-size: .8em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+  }
+  
+  .calendario td:hover{
+    background-color: black;
+    cursor: pointer;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 0;
+  }
+  
+  
+  .slider-frame{
+    
+    width: 100%;
+    height: auto;
 
+    overflow: hidden;
+  }
+  .slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slider 15s infinite alternate ease-in-out ;
+  }
+  .slider-frame li{
+    list-style: none;
+    width: 100%;
+  }
+  
+    .slider-controls {
+      margin-top: 10px;
+      text-align: left;
+    }
+
+
+    
+/* estilos pie de pagina */
+
+.pieDPag{
+    background-color: #D7D1D1;
+}
+
+.pieDPag iframe{
+
+    margin-left: 15.5%; 
+}
+#titulo{
+    display: inline-block;
+    margin-left: 19%;
+}
+#tCon{
+  
+    margin-top: -2%;
+    text-align: center;
+   
+ 
+}
+
+.contenido {
+   text-align: center;
+   margin-top: -12%;
+   font-size: 23px;
+ 
+}
+
+#logoPie{
+    display: inline-block;
+    margin-left: 65%;
+    margin-top: -10%;
+
+}
+
+.menupie h4{
+    display: inline-block;
+    margin-top: -100%;
+    color: #433131;
+    font-size: 23px;
+    margin-left: 3%;
+   
+}
+.redespie{
+    margin-top: -2%;
+    margin-left: 12%;
+}
+.pieDPag img{
+    margin-top: -13%;
+}
