@@ -5,6 +5,7 @@
     font-style: normal;
     margin: 0;
       padding: 0;
+     
   }
   
   /* estilos cabecera */
@@ -157,74 +158,87 @@
   
   
 /* estilos pagina de registro */
+
+.registro{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-top: 5%;
+}
+@media (max-width: 768px) {
+    .Formulario{
+   
+        width: 40vw;
+        height: 200px;
+        
+    }
+}
+
 #titulo1{
-    width: 25%;
-margin-top: 2%;
-margin-left: 35.5%;
-margin-bottom: -2.5%;
-  
+    position: relative;
+   margin-top: 5%;
+   margin-left: 37%;
+   margin-bottom: -6.5%;
+    width: 25vw;
 }
 
-
-#titulo2{
-    width: 25%;
-margin-top: -256%;
-margin-left: 35.5%;
-margin-bottom: 6%;
-  
-}
-.FormDueño{
-    margin-top: 30px;
-    margin-left: 30%;
-    width: 1000px;
-    height: 750px;
+.Formulario{
+   
+    width: 40vw;
+    height: 600px;
     border-color: black;
     border-width: 2px;
-    border-style: solid;
-   
+    border-style: solid; 
 }
 
-#mascota{
-    margin-top: -7.5%;
-}
-#nombre1{
-    margin-top: 9%;
-}  
-
-.FormDueño h2{
-    margin-top: 3%;
-    margin-left: 36%;
-    font-size: 30px;
-   
-}
-#caja1{
-    margin-bottom: 4%;
-}
-.FormDueño input, select{
-    font-size: 18px;
-    width: 350px;
-    height: 30.5px;
-    margin-left: 30%;
-    margin-top: -2%;
+.Formulario h2{
+    font-size: 1vw;
+    padding: 20px 0;
 }
 
-#pata1{
-    width: 8%;
-    display: inline-block;
-    margin-left: 28%;
-    margin-bottom: -15%;
+.Formulario input, select{
+    font-size: 1vw;
+    width: 25vw;
+    height: 3.5vh;
+    border-width: 0.5px;
+    background: rgba(116, 93, 206, 0.07);
+
+    
 }
+#caja2{
+    margin-top: 2vw;
+}
+
+.dato1{
+    display:flex;
+    align-items: center;
+    margin-top: 7.5%;
+    margin-left: 17%;
+
+}
+.dato3{
+    display:flex;
+    align-items: center;
+    margin-left: 17%;
+}
+.dato4{
+    display:flex;
+    align-items: center;
+    margin-left: 17%;
+}
+.dato5{
+    display:flex;
+    align-items: center;
+    margin-left: 17%;
+}
+
+
 .patas{
     width: 8%;
-    display: inline-block;
-    margin-left: 28%;
-    margin-bottom: -9%;
-    ;
 }
 
 #pata3D{
-    margin-top: -15%;
-    margin-left: 55%;
+  
     width: 25%;
     
 }
@@ -254,54 +268,115 @@ margin-bottom: 6%;
     height: 820px;
 }
 
+
+
 /* estilos pie de pagina */
 
-.pieDPag{
-    background-color: #D7D1D1;
+/* redes de el pie de pagina  */
+
+.encuentranos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    align-items: center;
+    font-size: 0.5vw;
+
+
+}              
+
+#mapa{
+    width: 15vw;
+    height: 10vh;
+    border-radius: 0.09vw;
+    border-style: hidden;
+
 }
 
-.pieDPag iframe{
+.infoPiepag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    margin-left: 15.5%; 
-}
-#titulo{
-    display: inline-block;
-    margin-left: 19%;
-}
-#tCon{
-  
-    margin-top: -2%;
     text-align: center;
-   
- 
+    justify-content: center;
 }
 
-.contenido {
-   text-align: center;
-   margin-top: -12%;
-   font-size: 23px;
- 
+#parrafo{
+    text-align: center;
+    font-size: 1vw;
+    margin-bottom: -1vw;
+}
+#titulo2{
+    text-align: center;
+    font-size: 1vw;
 }
 
-#logoPie{
-    display: inline-block;
-    margin-left: 65%;
-    margin-top: -10%;
-
+.pieDPag{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 5vw;
+    background-image: url(image/olasPiedPag.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 89.9%;
+    margin-top: 10px;
+    text-align: center;
+    
 }
 
-.menupie h4{
-    display: inline-block;
-    margin-top: -100%;
-    color: #433131;
-    font-size: 23px;
-    margin-left: 3%;
-   
+.menupie a{
+    color: #1a1010;
+    text-decoration: none;
+    padding: 0 5px 5px 5px;
+    transition: 0.4s;
+    font-size: 1vw; 
+    
 }
+.menupie{
+    margin-bottom: 1vw;
+  
+}
+
+/* redes sociales de el pie de pagina */
+
 .redespie{
-    margin-top: -2%;
-    margin-left: 12%;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 12vw;
+        gap: 1vw;
+        margin-bottom: 1vw;
 }
-.pieDPag img{
-    margin-top: -13%;
+
+
+
+.seccion1{
+    display: flex;
+    align-items: center;
+
+}
+
+/* logo de el pie de pagina  */
+ .logopiePag{
+    display: flex;
+    height: 20vw;
+    width: 20vw;
+ }
+
+ #imgLogo{ 
+    width: 20vw;
+    padding:3vw;
+ }
+
+/* olas del pie de pagina  */
+.olaspie{
+    width: 100%;
+    display: flex;
+    justify-content:end;
+   
+}
+#imgOlas{
+    width: 100%;
 }

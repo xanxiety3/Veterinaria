@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="image/logoOficial.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
-    <body >
+    <body style="background:#F0EBEB;">
     
     <!--  Acá estan todas las imagenes y texto que lleva la primera linea de la cabecera-->
     <header class="cabecera">
@@ -75,110 +75,49 @@
 <!-- ESTO ES OFICIALMENTE LA SEGUNDA PANTALLA REGISTRO -->
 
  <div >
-<img src="image/tituloRegistro1.png" id="titulo1">
+<img src="image/tituloRegistro.png" id="titulo1">
 </div>
 <div class="registro">
-    <div class="FormDueño">
-        <img id="pata1" src="image/huellaazul.png">
-        
-        <h2 id="nombre1">Nombre </h2>
+    <div class="Formulario">
+
+        <div class="dato1">
+            <img class="patas" id="pata1" src="image/huellaazul.png">
+            <h2 id="nombre1">Nombre </h2>
+        </div>
         <input id="caja1" type="text" name="nombre"  placeholder="Nombre completo" required><br>
-        <select name="tiposDoc" style="height: 40px;">
-            
-            <option value="cc" style="background-image: url(image/huellaazul.png);"> cc</option>
-            <option value="ti" >Tarjeta de identidad</option>
-            <option value="pasaport">Pasaporte</option>
-        </select>
-        <img class="patas" src="image/huellaazul.png">
-        <h2>Número de documento</h2>
-        <input type="text" name="numDoc" required > <br>
-        <img class="patas" src="image/huellaazul.png">
-        <h2>Número de contacto</h2>
+
+        <div class="dato2" id="caja2">  
+            <select name="tiposDoc" >
+                
+                <option value="cc"> Seleccione un tipo de documento</option>
+                <option value="ti" >Tarjeta de identidad</option>
+                <option value="pasaport">Pasaporte</option>
+            </select>
+        </div>
+        <div class="dato3"> 
+            <img class="patas" src="image/huellaazul.png">
+            <h2>Número de documento</h2>
+        </div>
+        <input type="text" name="numDoc" required > 
+
+        <div class="dato4">
+            <img class="patas" src="image/huellaazul.png">
+            <h2>Número de contacto</h2>
+        </div>
         <input type="tel" name="telefono" required > <br>
-        <img class="patas" src="image/huellaazul.png">
-        <h2>Direccion</h2>
-        <input type="text" name="direccion" placeholder="De una referencia" required>
-     
-    </div>
-    <img src="image/pata3D.png" id="pata3D">
 
-
-    <div >
-        <img src="image/titulo2Registroo.png" id="titulo2">
-        </div>
-    <div class="FormDueño" id="mascota" >
-        <form>
-        <img id="pata1" src="image/huellamorada.png">
         
-        <h2 id="nombre1">Nombre </h2>
-        <input id="caja1" type="text" name="nombre"  placeholder="Nombre de su mascota" required><br>
-    
-        <img class="patas" src="image/huellamorada.png  ">
-        <h2>Edad</h2>
-        <input type="number" name="edad" required > <br>
-        <img class="patas" src="image/huellamorada.png">
+        <div class="dato5">
+             <img class="patas" src="image/huellaazul.png">
+            <h2>Direccion</h2>
+         </div>
+         <input type="text" name="direccion" placeholder="De una referencia" required>
 
-        <h2>Tipo de mascota</h2>
-        <div class="gato">
-            <input type="radio" id="gatobtn" name="gato" value="gato">
-        </div>
-        <img src="image/gato 1.png" id="gatoimg">
-        <div class="perro">
-            <input type="radio" id="perrobtn" name="perro" value="perro">
-        </div>
-        <img src="image/perro1.png" id="perroimg">
-        <img class="patas" src="image/huellamorada.png"style="visibility: collapse;">
-        <img class="patas" src="image/huellamorada.png" >
-        <h2>Raza</h2>
-        <input type="text" name="raza" placeholder="Raza de su mascota" required id="razatxt">
-    </form>
+       
     </div>
     <img src="image/pata3D.png" id="pata3D">
-
 
 </div>
-<!-- pie de pagina -->
-<div class="pieDPag">
-    <!-- <img src="image/piedePag .png" style="width: 100%;"> -->
-    <div>
-    <hr>
-    <h2 id="titulo">¡ ENCUENTRANOS !</h2>
-    <h2 id="tCon">Animals House</h2>
- </div> 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4049135.6195077556!2d-76.18471254861089!3d7.657970647986431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7f900194bf%3A0x8c3d01e423f55d9a!2sAnimal%20House!5e0!3m2!1ses-419!2sco!4v1716379362237!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <div>
-    
-    <p class="contenido"> El lugar indicado para tu mascota, donde contamos con personal capacitado <br> 
-        para cuidar y mimar a tu hijo canino o perruno.<br>
-        ¡Brindanos tu confianza!</p>
-   
-    <img id="logoPie" src="image/logoFINAL.png" alt="logo">
-    </div>
-    <div class="menupie" style="margin-top: -10%;" >
-        <a href="registrate.html">
-            <h4 style="margin-left: 35%;"   >REGISTRATE</h4></a>
-        <h4 >SERVICIOS</h4>
-        <h4 >QUIENES SOMOS</h4>
-        <h4 >CITAS</h4>
-    </div>
-    <div class="redespie">
-       
-        <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
-            <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-                margin-left: 800px ; margin-top: 45px; height: 3%; width: 3%;"></a>
-    
-        <img src="image/Facebooknegro.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 10px ; margin-top: 45px;height: 3%; width: 3%;">
-    
-        <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 15px ; margin-top: 50px; height: 2.5%; width: 2.5%;
-             ">
-        <img src="image/WASANEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 15px ; margin-top: 45px; height: 2.8%; width: 2.8%; ">
-       
-    </div>
-    <img src="image/olasPiedPag.png" width="100%">
-    </div>
 </body>
 </html>
