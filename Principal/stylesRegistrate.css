@@ -5,7 +5,6 @@
     font-style: normal;
     margin: 0;
       padding: 0;
-     
   }
   
   /* estilos cabecera */
@@ -24,7 +23,7 @@
       }
   
       .imgSesion{
-          width: 4vh;
+          width: 2vw;
       }
   
       .inicioSesion{
@@ -157,6 +156,125 @@
   }
   
   
+  
+  
+  
+  /* estilos inicio de sesion  */
+  
+  
+  /* estilos ventana flotante */
+  .contenedor{
+  
+      width: 60vw;
+      height: 70%;
+      background: #1a1010;
+      justify-content: center;
+     align-items: center;
+     position: absolute;
+     left: 25%;
+     top:25%;
+     position:fixed;
+     overflow: hidden;
+     display: grid;
+     grid-template-columns: 50% 50%;  
+      display: none; 
+      text-align: center;
+  }
+  
+  .imageLogin{
+     width: 100vw;
+  }
+  .imagenLogin img{
+   width: 100%;
+   height: 100%;
+  }
+  
+  .login{
+      width: 100%;
+      display: flex;
+      display: inline-block;
+      background-color: #F0EBEB;
+      height: 100%;
+  
+  
+  }
+  
+  .formulario{
+      width: 100%;
+  
+     
+  }
+  
+  .login h2{
+      text-align: left;
+      margin-left: 13%;
+  
+  
+  }
+  
+  #btnInicio{
+      background-color: rgba(116, 93, 206, 0.71);
+      margin-top: 3.5%;
+      width: 74%;
+      font-weight: bold;
+      font-size: 100%;
+  }
+  
+  #pata1{
+   
+      position: absolute;
+      top: 42%;
+     }
+  
+     #pata2{
+   
+      position: absolute;
+      top: 57%;
+     }
+  
+  .patas{
+      width: 6%;
+      display: flex;
+      position: absolute;
+      left: 51%
+      ;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+      width: 70%;
+      background-color: rgba(116, 93, 206, 0.09);
+      padding: 10px;
+      font-size: 16px;
+  }
+  
+  #cerrar{
+      position: absolute;
+      width: 7%;
+      margin-left: 90%;
+  }
+  
+  .pieLogin h2{
+      text-align: center;
+      margin-right: 15%;
+      font-size: 160%;
+      margin-bottom: -1.5%;
+     
+  }
+  
+  a:link{
+       text-decoration: none;
+       color: #2B1A70;
+      
+  }
+  a :hover{
+      color: #0A4BAF;
+  
+  }
+  
+  /* aqui termina el login  */
+  
 /* estilos pagina de registro */
 
 .registro{
@@ -165,14 +283,7 @@
     text-align: center;
     padding-top: 5%;
 }
-@media (max-width: 768px) {
-    .Formulario{
-   
-        width: 40vw;
-        height: 200px;
-        
-    }
-}
+
 
 #titulo1{
     position: relative;
@@ -191,6 +302,49 @@
     border-style: solid; 
 }
 
+@media screen and (max-width: 768px) {
+    .Formulario{
+        width: 60vw;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      
+    }
+    .Formulario div{
+        margin-left: 27%;
+   
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+
+    .Formulario{
+        width: 60vw;
+        height: 400px;
+        
+    }
+    #titulo1{
+        position: relative;
+        margin-top: 5%;
+        margin-left: 27.5%;
+        margin-bottom: -8%;
+         width: 45vw;
+    }
+   .pata3d{
+    width: 150%;
+    position: relative;
+    left: 30%;
+    bottom: 53%;
+   }
+    
+  
+ 
+    
+}
+
 .Formulario h2{
     font-size: 1vw;
     padding: 20px 0;
@@ -201,11 +355,9 @@
     width: 25vw;
     height: 3.5vh;
     border-width: 0.5px;
-    background: rgba(116, 93, 206, 0.07);
-
-    
+    background: rgba(116, 93, 206, 0.07);   
 }
-#caja2{
+#dato2{
     margin-top: 2vw;
 }
 
@@ -216,16 +368,9 @@
     margin-left: 17%;
 
 }
-.dato3{
-    display:flex;
-    align-items: center;
-    margin-left: 17%;
-}
-.dato4{
-    display:flex;
-    align-items: center;
-    margin-left: 17%;
-}
+
+.dato3,
+.dato4,
 .dato5{
     display:flex;
     align-items: center;
@@ -233,14 +378,21 @@
 }
 
 
-.patas{
+
+.patas1{
     width: 8%;
 }
 
+.pata3d{
+
+}
+
+
 #pata3D{
-  
-    width: 25%;
-    
+     width: 25%;
+    position: relative;
+    left: 25%;
+    margin-bottom: 50%;
 }
 #gatoimg{
     width: 12%;
@@ -269,7 +421,7 @@
 }
 
 
-
+  
 /* estilos pie de pagina */
 
 /* redes de el pie de pagina  */
