@@ -5,52 +5,114 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VETERINARIA</title>
 <link rel="stylesheet" href="stylesQuienesSomos.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="image/logoOficial.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body >
+<body style="background:#F0EBEB;" >
 
 <!--  Acá estan todas las imagenes y texto que lleva la primera linea de la cabecera-->
-<div class="cabecera">
-    <a href="index.html"><img src="image/logoOficial.png" alt="logo sin letras" style="display: inline-block; width: 5%; height: 5%; margin-left: 80px;"></a>
-    <a href="index.html">
-        <span >ANIMALS HOUSE</span></a>
-
-    <img src="image/logoInicioSesion.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-        margin-left: 600px ; margin-top: 45px; width: 2%;">
-   <span >
-    INICIAR SESION</span>
-
-    <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
-        <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 800px ; margin-top: 45px; height: 3%; width: 3%;"></a>
-
-    <img src="image/Facebooknegro.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-        margin-left: 10px ; margin-top: 45px;height: 3%; width: 3%;">
-
-    <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-        margin-left: 15px ; margin-top: 50px; height: 2.5%; width: 2.5%;
-        
-        
-        
-         ">
-
-    <img src="image/WASANEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-        margin-left: 15px ; margin-top: 45px; height: 2.8%; width: 2.8%; ">
-    <hr>
+<header class="cabecera">
+    <div class="logo">
+        <a href="index.html"><img class="claseLogo" src="image/logoOficial.png" alt="logo sin letras" id="logoCabecera" ></a>
+        <a href="index.html" >
+            <span id="animalhouse"  >ANIMALS HOUSE</span></a>    
+    </div>
+<div class="inicioSesion">
+    <div >
+        <img src="image/logoInicioSesion.png" alt="logo inicio de sesion" class="imgSesion">
+    </div>
+    <a href="javascript:abrir()" id="iniciosesion"><span >INICIAR SESION</span></a>
+ 
 </div>
+
+
+
+<!-- inicio de sesion -->
+<div class="contenedor" id="contenedor">
+    <!-- <a href="javascript:cerrar()"><img src="image/cancelar.png" id="cerrar"></a> -->
+    <div class="imagenLogin">
+        <img src="image/perroLogin.png" alt="cachorro">
+
+    </div>
+    <div class="login">
+        <form action="#" class="formulario">
+            <img src="image/logoOficial.png" alt="logo" >
+            <h2>USUARIO</h2>
+            <img class="patas" src="image/huellaazul.png" id="pata1">
+            <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
+            <br/>
+            <H2>CONTRASEÑA</H2>
+            <img class="patas" src="image/huellaazul.png"  id="pata2">
+            <input type="password" name="contrasenia" placeholder="Ingrese su contraseña" required>
+            <br/>
+            <input type="submit" name ="boton" id="btnInicio"  value="Iniciar sesion"></input> 
+          
+            <a class="pieLogin" href="registrate.html"><h2 >¿Olvidó su contraseña?</h2></a>
+            <a class="pieLogin" href="registrate.html"><h2>¡Registrate aquí!</h2></a>
+            <a class="pieLogin" href="javascript:cerrar()"> <h2> CERRAR</h2></a>
+
+        </form>
+
+    </div>
+
+    <!-- PONER EL WASA FLOTANTE  -->
+
+</div>
+
+<script>
+
+    function abrir(){
+        document.getElementById("contenedor").style.display="grid";
+    }
+    function cerrar(){
+        document.getElementById("contenedor").style.display="none";
+    }
+    </script>
+
+<div class="redes">
+    <div> 
+        <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
+        <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" class="imgRedes" ></a></div>
+    <div>    
+        <img src="image/Facebooknegro.png" alt="logo inicio de sesion" class="imgRedes Facebook">
+    </div>
+    <div>    
+        <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" class="imgRedes">
+    </div>
+    <div>    
+        <img src="image/WASANEGRO.png" alt="logo inicio de sesion" class="imgRedes">
+    </div>
+</div>
+</header>
 <!-- hasta acá termina la primera parte de la cabecera -->
 
 <!-- Aca comienza la segunda parte de la cabecera ( el menú de opciones) -->
-<div class="menu" >
-    <img src="image/telefonoAzul.png" alt="logo telefono azul" style=" 
-        margin-left: 95px ; margin-top: 8px; height: 2.8%; width: 2.8%;">
-    <h4 style= " display: inline-block ; margin-left: 10px; vertical-align:top; margin-top: 25px;">EMERGENCIA</h4>
-    <a href="registrate.html">
-        <h4>REGISTRATE</h4></a>
-    <a href="servicios.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">SERVICIOS</h4></a>
-    <a href="quienesSomos.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">QUIENES SOMOS</h4></a>
-    <a href="citas.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">CITAS</h4></a>
+
+<div class="apartadoMenu">
+    <div class="apartadoEmergencia">
+    <img src="image/telefonoAzul.png" alt="logo telefono azul" id="imgTelefono"> 
+    <h4 class="emergenciaTexto">EMERGENCIA</h4>
+   
+    </div>
+     <input type="checkbox"  id="check">
+        <label for="check" class="mostrarMenu">
+        &#8801
+    </label>
+    <nav class="menu">
+        <a href="registrate.html">REGISTRATE</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="quienesSomos.html">QUIENES SOMOS</a>
+        <a href="citas.html">CITAS</a>
+        <label for="check" class="esconderMenu">
+            &#215
+        </label>
+    </nav>
 </div>
+
 <!-- AQUI TERMINA LA SEGUNDA PARTE DE LA CABECERA -->
+
 
 <!-- ESTE ES EL SLIDER -->
 <div class="slider-frame">
@@ -95,27 +157,32 @@
     <img src="image/tituloValores.png" alt="VALORES INSTITUCIONALES">
 </div>
 
+<div class="valores1">
+    <div class="valores">
 
-<div class="valores">
 
-
-    <img src="image/respeto.png" alt="respeto">
-    <img src="image/empatia.png" alt="empatia">
-    <img src="image/excelencia.png" alt="exceleencia">
-    <img src="image/responsabilidad.png" id="responsabilidad" alt="responsabilidad">
+        <img src="image/respeto.png" alt="respeto">
+        <img src="image/empatia.png" alt="empatia">
+        <img src="image/excelencia.png" alt="exceleencia">
+        <img src="image/responsabilidad.png" id="responsabilidad" alt="responsabilidad">
+        
     
-
-    
-</div>
-<div class="subtitulos">
-        <h1 id="respetoh">RESPETO</h1>
-   
-        <h1 id="empatiah">EMPATIA</h1>
-    
-        <h1 id="excelenciah">EXCELENCIA</h1>
-    
-        <h1 id="responsabilidadh">RESPONSABILIDAD</h1>
+        
     </div>
+</div>
+
+
+<div class="titulos">
+    <div class="subtitulos">
+        <h1 id="respetoh">RESPETO</h1>
+        <h1 id="empatiah">EMPATIA</h1>
+        <h1 id="excelenciah">EXCELENCIA</h1>
+        <h1 id="responsabilidadh">RESPONSABILIDAD</h1>
+
+    </div>
+</div>
+
+    
 <div class="banerfinal">
     
     <img src="image/banerQ.png" alt="logo">
@@ -127,57 +194,56 @@
 
 
 
-
-
-
-
 <!-- pie de pagina -->
-
- <div class="pieDPag">
-    <!-- <img src="image/piedePag .png" style="width: 100%;"> -->
-    <div>
-    <hr>
-    <h2 id="titulo">¡ ENCUENTRANOS !</h2>
-    <h2 id="tCon">Animals House</h2>
- </div> 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4049135.6195077556!2d-76.18471254861089!3d7.657970647986431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7f900194bf%3A0x8c3d01e423f55d9a!2sAnimal%20House!5e0!3m2!1ses-419!2sco!4v1716379362237!5m2!1ses-419!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <div>
-    
-    <p class="contenido"> El lugar indicado para tu mascota, donde contamos con personal capacitado <br> 
-        para cuidar y mimar a tu hijo canino o perruno.<br>
-        ¡Brindanos tu confianza!</p>
    
-    <img id="logoPie" src="image/logoFINAL.png" alt="logo">
-    </div>
-    <div class="menupie" style="margin-top: -10%;" >
-        <a href="registrate.html">
-            <h4 style="margin-left: 35%;"   >REGISTRATE</h4></a>
-        <a href="servicios.html">
-            <h4 >SERVICIOS</h4></a>
-        <a href="quienesSomos.html">
-            <h4 >QUIENES SOMOS</h4></a>
-        <a href="citas.html">
-            <h4 >CITAS</h4></a>
-    </div>
-    <div class="redespie">
-       
-        <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
-            <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-                margin-left: 800px ; margin-top: 45px; height: 3%; width: 3%;"></a>
-    
-        <img src="image/Facebooknegro.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 10px ; margin-top: 45px;height: 3%; width: 3%;">
-    
-        <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 15px ; margin-top: 50px; height: 2.5%; width: 2.5%;
-             ">
-        <img src="image/WASANEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 15px ; margin-top: 45px; height: 2.8%; width: 2.8%; ">
-       
-    </div>
-    <img src="image/olasPiedPag.png" width="100%">
-    </div>
-
-</body>
-</html>
+<div class="pieDPag">
+    <hr>
+       <div class="encuentranos">
+           <h1>¡ENCUENTRANOS!</h1>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32576156.09548051!2d-74.121795!3d4.668444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7f900194bf%3A0x8c3d01e423f55d9a!2sAnimal%20House!5e0!3m2!1ses-419!2sco!4v1717603329793!5m2!1ses-419!2sco" id="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+           
+       </div>
+       <div class="infoPiepag">
+           <h1 id="titulo2">ANIMALS HOUSE</h1>
+           <pre id="parrafo">
+               El lugar indicado para tu mascota, donde contamos
+               con personal capacitado para cuidar y mimar
+               a tu hijo canino  o perruno. 
+               ¡Brindamos tu confianza!
+           </pre>
+           <nav class="menupie">
+               <a href="registrate.html">REGISTRATE</a>
+               <a href="servicios.html">SERVICIOS</a>
+               <a href="quienesSomos.html">QUIENES SOMOS</a>
+               <a href="citas.html">CITAS</a>
+              
+           </nav>
+           <div class="seccion1">
+           <div class="redespie">
+               <div> 
+                   <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
+                   <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" class="imgRedes" ></a></div>
+               <div>    
+                   <img src="image/Facebooknegro.png" alt="logo inicio de sesion" class="imgRedes Facebook">
+               </div>
+               <div>    
+                   <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" class="imgRedes">
+               </div>
+               <div>    
+                   <img src="image/WASANEGRO.png" alt="logo inicio de sesion" class="imgRedes">
+               </div>
+           </div>
+       </div>
+   </div>
+           
+       <div class="logopiePag"> 
+           <img src="image/logoFINAL.png" alt="Logo" id="imgLogo">
+       </div>
+   </div>
+   
+   
+   
+   </body>
+   
+   </html>

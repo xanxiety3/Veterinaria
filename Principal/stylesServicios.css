@@ -278,18 +278,28 @@
   .servicios{
    display: flex;
    flex-direction: column;
+   
 
 }
+
 
 
 .servicios img{
     width: 25vw;
-    margin-top: 4%;
-    margin-left: 12%;
+    margin-top: 5vw;
+
 }
 
 .primeros{
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+}
+
+.segundos{
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
 }
 
 #servicio4{

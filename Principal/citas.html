@@ -6,95 +6,111 @@
   <title>Document</title>
   <link rel="stylesheet" href="stylesCitas.css">
 </head>
-<body>
-  
+<body style="background:#F0EBEB;" >
 
-
-<!--  Acá estan todas las imagenes y texto que lleva la primera linea de la cabecera-->
-<div class="cabecera">
-    <a href="index.html"><img src="image/logoOficial.png" alt="logo sin letras" style="display: inline-block; width: 5%; height: 5%; margin-left: 80px;"></a>
-    <a href="index.html">
-        <span >ANIMALS HOUSE</span></a>
-
-    <img src="image/logoInicioSesion.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-        margin-left: 600px ; margin-top: 45px; width: 2%;">
-   <a href="javascript:abrir()"><span >INICIAR SESION</span></a>
-
-<!-- inicio de sesion -->
-<div class="contenedor" id="contenedor">
-    <!-- <a href="javascript:cerrar()"><img src="image/cancelar.png" id="cerrar"></a> -->
-    <div class="imagenLogin">
-        <img src="image/perroLogin.png" alt="cachorro">
-
+    <!--  Acá estan todas las imagenes y texto que lleva la primera linea de la cabecera-->
+    <header class="cabecera">
+        <div class="logo">
+            <a href="index.html"><img class="claseLogo" src="image/logoOficial.png" alt="logo sin letras" id="logoCabecera" ></a>
+            <a href="index.html" >
+                <span id="animalhouse"  >ANIMALS HOUSE</span></a>    
+        </div>
+    <div class="inicioSesion">
+        <div >
+            <img src="image/logoInicioSesion.png" alt="logo inicio de sesion" class="imgSesion">
+        </div>
+        <a href="javascript:abrir()" id="iniciosesion"><span >INICIAR SESION</span></a>
+     
     </div>
-    <div class="login">
-        <form action="#" class="formulario">
-            <img src="image/logoOficial.png" alt="logo" >
-            <h2>USUARIO</h2>
-            <img class="patas" src="image/huellaazul.png" id="pata1">
-            <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
-            <br/>
-            <H2>CONTRASEÑA</H2>
-            <img class="patas" src="image/huellaazul.png"  id="pata2">
-            <input type="password" name="contrasenia" placeholder="Ingrese su contraseña" required>
-            <br/>
-            <input type="submit" name ="boton" id="btnInicio"  value="Iniciar sesion"></input> 
-          
-            <a class="pieLogin" href="registrate.html"><h2 >¿Olvidó su contraseña?</h2></a>
-            <a class="pieLogin" href="registrate.html"><h2>¡Registrate aquí!</h2></a>
-            <a class="pieLogin" href="javascript:cerrar()"> <h2> CERRAR</h2></a>
-
-        </form>
-
+    
+    
+    
+    <!-- inicio de sesion -->
+    <div class="contenedor" id="contenedor">
+        <!-- <a href="javascript:cerrar()"><img src="image/cancelar.png" id="cerrar"></a> -->
+        <div class="imagenLogin">
+            <img src="image/perroLogin.png" alt="cachorro">
+    
+        </div>
+        <div class="login">
+            <form action="#" class="formulario">
+                <img src="image/logoOficial.png" alt="logo" >
+                <h2>USUARIO</h2>
+                <img class="patas" src="image/huellaazul.png" id="pata1">
+                <input type="text" name="usuario" placeholder="Ingrese su usuario" required>
+                <br/>
+                <H2>CONTRASEÑA</H2>
+                <img class="patas" src="image/huellaazul.png"  id="pata2">
+                <input type="password" name="contrasenia" placeholder="Ingrese su contraseña" required>
+                <br/>
+                <input type="submit" name ="boton" id="btnInicio"  value="Iniciar sesion"></input> 
+              
+                <a class="pieLogin" href="registrate.html"><h2 >¿Olvidó su contraseña?</h2></a>
+                <a class="pieLogin" href="registrate.html"><h2>¡Registrate aquí!</h2></a>
+                <a class="pieLogin" href="javascript:cerrar()"> <h2> CERRAR</h2></a>
+    
+            </form>
+    
+        </div>
+    
+        <!-- PONER EL WASA FLOTANTE  -->
+    
     </div>
-
-    <!-- PONER EL WASA FLOTANTE  -->
-
-</div>
-
-<script>
-
-    function abrir(){
-        document.getElementById("contenedor").style.display="grid";
-    }
-    function cerrar(){
-        document.getElementById("contenedor").style.display="none";
-    }
-    </script>
-
-
-    <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
-        <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-            margin-left: 800px ; margin-top: 45px; height: 3%; width: 3%;"></a>
-
-    <img src="image/Facebooknegro.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-        margin-left: 10px ; margin-top: 45px;height: 3%; width: 3%;">
-
-    <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-        margin-left: 15px ; margin-top: 50px; height: 2.5%; width: 2.5%;
-        
-        
-        
-         ">
-
-    <img src="image/WASANEGRO.png" alt="logo inicio de sesion" style="display: inline-block; vertical-align: top; 
-        margin-left: 15px ; margin-top: 45px; height: 2.8%; width: 2.8%; ">
-    <hr>
-</div>
-<!-- hasta acá termina la primera parte de la cabecera -->
-
-<!-- Aca comienza la segunda parte de la cabecera ( el menú de opciones) -->
-<div class="menu" >
-    <img src="image/telefonoAzul.png" alt="logo telefono azul" style=" 
-        margin-left: 95px ; margin-top: 8px; height: 2.8%; width: 2.8%;">
-    <h4 style= " display: inline-block ; margin-left: 10px; vertical-align:top; margin-top: 25px;">EMERGENCIA</h4>
-    <a href="registrate.html">
-        <h4>REGISTRATE</h4></a>
-    <a href="servicios.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">SERVICIOS</h4></a>
-    <a href="quienesSomos.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">QUIENES SOMOS</h4></a>
-    <a href="citas.html"><h4 style=" display: inline-block; margin-left: 70px; vertical-align: top; margin-top: 25px;">CITAS</h4></a>
-</div>
-<!-- AQUI TERMINA LA SEGUNDA PARTE DE LA CABECERA -->
+    
+    <script>
+    
+        function abrir(){
+            document.getElementById("contenedor").style.display="grid";
+        }
+        function cerrar(){
+            document.getElementById("contenedor").style.display="none";
+        }
+        </script>
+    
+    <div class="redes">
+        <div> 
+            <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
+            <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" class="imgRedes" ></a></div>
+        <div>    
+            <img src="image/Facebooknegro.png" alt="logo inicio de sesion" class="imgRedes Facebook">
+        </div>
+        <div>    
+            <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" class="imgRedes">
+        </div>
+        <div>    
+            <img src="image/WASANEGRO.png" alt="logo inicio de sesion" class="imgRedes">
+        </div>
+    </div>
+    </header>
+    <!-- hasta acá termina la primera parte de la cabecera -->
+    
+    <!-- Aca comienza la segunda parte de la cabecera ( el menú de opciones) -->
+    
+    <div class="apartadoMenu">
+        <div class="apartadoEmergencia">
+        <img src="image/telefonoAzul.png" alt="logo telefono azul" id="imgTelefono"> 
+        <h4 class="emergenciaTexto">EMERGENCIA</h4>
+       
+        </div>
+         <input type="checkbox"  id="check">
+            <label for="check" class="mostrarMenu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href="registrate.html">REGISTRATE</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="quienesSomos.html">QUIENES SOMOS</a>
+            <a href="citas.html">CITAS</a>
+            <label for="check" class="esconderMenu">
+                &#215
+            </label>
+        </nav>
+    </div>
+    
+    <!-- AQUI TERMINA LA SEGUNDA PARTE DE LA CABECERA -->
+    
+    
+    
 
 <div class="apartarCitas">
     <form>
@@ -177,38 +193,99 @@
                 <label for="informacionAdicional">Información Adicional</label>
                 <textarea id="informacionAdicional" name="informacionAdicional" rows="4" placeholder="Ingrese información adicional"></textarea>
             </div>
-        </div>
+            <div class="calendario1">
 
-        <button type="submit">Apartar Cita</button>
-    <div class="calendario1">
-
-        <div class="slider-frame">
-
-            <ul>
-                <li>
-                    <table class="calendario">
-                        <thead>
-                            <caption>Mayo 2024</caption>
-                                <tr>
-                                <th>Lu</th>
-                                <th>Ma</th>
-                                <th>Mie</th>
-                                <th>Ju</th>
-                                <th>Vi</th>
-                                <th>Sá</th>
-                                <th>Do</th>
-                            </tr>
-                        </thead>
-                            <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                                </tr>
+                <div class="slider-frame">
+        
+                    <ul>
+                        <li>
+                            <table class="calendario">
+                                <thead>
+                                    <caption>Mayo 2024</caption>
+                                        <tr>
+                                        <th>Lu</th>
+                                        <th>Ma</th>
+                                        <th>Mie</th>
+                                        <th>Ju</th>
+                                        <th>Vi</th>
+                                        <th>Sá</th>
+                                        <th>Do</th>
+                                    </tr>
+                                </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                                <td>8</td>
+                                                <td>9</td>
+                                                <td>10</td>
+                                                <td>11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td>13</td>
+                                                <td>14</td>
+                                                <td>15</td>
+                                                <td>16</td>
+                                                <td>17</td>
+                                                <td>18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>19</td>
+                                                <td>20</td>
+                                                <td>21</td>
+                                                <td>22</td>
+                                                <td>23</td>
+                                                <td>24</td>
+                                                <td>25</td>
+                                            </tr>
+                                            <tr>
+                                                <td>26</td>
+                                                <td>27</td>
+                                                <td>28</td>
+                                                <td>29</td>
+                                                <td>30</td>
+                                                <td>31</td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        </li>
+                                
+                                <li>
+                                    <table class="calendario">
+                                    <thead>
+                                    <caption>Junio 2024</caption>
+                                    <tr>
+                                        <th>Lu</th>
+                                        <th>Ma</th>
+                                        <th>Mie</th>
+                                        <th>Ju</th>
+                                        <th>Vi</th>
+                                        <th>Sá</th>
+                                        <th>Do</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                    </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>6</td>
@@ -242,85 +319,25 @@
                                         <td>28</td>
                                         <td>29</td>
                                         <td>30</td>
-                                        <td>31</td>
+                                        <td></td>
                                         <td></td>
                                     </tr>
                                     </tbody>
                                 </table>
                                 </li>
-                        
-                        <li>
-                            <table class="calendario">
-                            <thead>
-                            <caption>Junio 2024</caption>
-                            <tr>
-                                <th>Lu</th>
-                                <th>Ma</th>
-                                <th>Mie</th>
-                                <th>Ju</th>
-                                <th>Vi</th>
-                                <th>Sá</th>
-                                <th>Do</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>6</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td>
-                                <td>10</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                                <td>17</td>
-                                <td>18</td>
-                            </tr>
-                            <tr>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
-                                <td>23</td>
-                                <td>24</td>
-                                <td>25</td>
-                            </tr>
-                            <tr>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                                <td>29</td>
-                                <td>30</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        </li>
-                        </ul>
-
-                                </div>
-
-        <div class="slider-controls">
-            <button id="prevBtn">Anterior</button>
-            <button id="nextBtn">Siguiente</button>
+                                </ul>
+        
+                                        </div>
+        
+                <div class="slider-controls">
+                    <button id="prevBtn">Anterior</button>
+                    <button id="nextBtn">Siguiente</button>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <button type="submit">Apartar Cita</button>
+    
 </form>
 </div>
 

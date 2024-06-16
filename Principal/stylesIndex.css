@@ -312,6 +312,36 @@ a :hover{
     95% {margin-left: -300%;}
 }
 
+
+/* ESTILOS WASA FLOTANTE */
+
+.wasaflotante{
+   
+        position: fixed; 
+        display: flex;
+        gap: 0.5vw;
+        bottom: 20px; 
+        padding: 5px 20px; 
+        background-color: #25d366; 
+        color: white; 
+        border-top-right-radius: 10px; 
+        border-bottom-right-radius: 10px;
+        z-index: 1000; /* ESTO AYUDA A QUE SI O SI ESTE POR ENCIMA*/
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de elevación */
+        align-items: center;
+}
+
+.wasaflotante h1{
+    font-size: 1vw;
+    text-align: center;
+}
+.wasaflotante img{
+    width: 2vw;
+}
+
+
+
+
 /* estilos index */
 
 .citas{
