@@ -276,124 +276,125 @@
   /* aqui termina el login  */
 
 
-  
-
-.apartarCitas{
-    justify-content: center;
+  .datosTitulo1{
+    width: 100vw;
+    background-color: rgba(116, 93, 206, 0.09);
     display: flex;
-    width: 100%;
+    justify-content: center;
+    margin-top: 2vw;
+    font-size: 15px; 
+
+  }
+  .datosTitulo1 h1{
+    color:  #0A4BAF;
+    font-size: 1vw;
+    padding: 15px;
+
+  }
+
+  .filas{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2vw;
 }
-form {
-  
-    padding: 20px;
+.filas1{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2vw;
+    gap: 7vw;
+}
+
+
+
+.huellas{
+    display: flex;
+    width: 25vw;
+   height: 3vw;
+   justify-content: center;
+   align-items: center;
+}
+.huellas img{
+    width: 3vw;
+}
+.huellas label{
+    text-align: center;
+
+}
+
+
+.grupos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+    text-align: center;
+    font-size: 1vw;
     
 
 }
-
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.input-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.form-item {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-label {
-    margin-bottom: 5px;
-    color: #555;
-}
-
-input, select, textarea {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
+.grupos input{
     width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
+    height: 1vh;
     border: none;
+    text-align: center;
     border-radius: 4px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
+    font-size: 1vw;
+    padding: 15px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.grupos select{
+    width: 100%;
+    height: 3.5vh;
+    border: none;
+    background-color: rgba(116, 93, 206, 0.09);
+    color: #2B1A70;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1vw;
+}
 
 
 
 
 .calendario1{
    display: flex;
-    
+   flex-direction: column;  
+   width: 18vw;
+   padding-left: 7vw;
+   padding-right:2vw ;
+
 }
 
-
-.calendario{
-    
-    
-  }
-  
   .calendario th, .calendario td{
     text-align: center;
     padding: .2em .5em;
     border: 1px solid black;
+    font-size: 1vw;
+ 
+  }
+  .calendario th{
+    color: #0A4BAF;
   }
   
   .calendario caption{
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 1vw;
+    text-align: center;
     font-variant: small-caps;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 5px;
   }
   
   .calendario td{
     text-align: left;
-    font-size: .8em;
+    font-size: .5em;
     padding-bottom: 3em;
     padding-right: 3em;
   }
   
   .calendario td:hover{
-    background-color: black;
+    background-color: #2B1A70;
     cursor: pointer;
     font-size: 1.6em;
     text-align: center;
@@ -420,12 +421,160 @@ button:hover {
   }
   
     .slider-controls {
-      margin-top: 10px;
-      text-align: left;
+   
+    display: flex;
+    gap: 253px;
+    margin-bottom: -2vw;
+    
+    
     }
+
+#prevBtn{
+    width: 2vw;
+    height: 3vh;
+   
+    background-color: rgba(116, 93, 206, 0.09);
+    border: none;
+    border-radius: 4px;
+    color: #0A4BAF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#nextBtn{
+    width: 2vw;
+    height: 3vh;
+    background-color: rgba(116, 93, 206, 0.09);
+    border: none;
+    border-radius: 4px;
+    color: #0A4BAF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.horas{
+    width: 25vw;
+    display: flex;
+    gap: 2vw;
+    padding-top: 1.5vw;
+
+
+  
+
+}
+.horas img{
+    width: 5vw;
+   
+}
+
+.hora{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    
+}
+
+.botones{
+    display: flex;
+    gap: 5vw;
+    align-items: center ;
+    justify-content: center;
+}
+
+.botones input[type=radio]{
+    width: 2vw;
+    height: 2em;
+    border: 0px;
+}
+
+#textTarea{
+    width: 24vw;
+    height: 17vh;
+    background-color: rgba(116, 93, 206, 0.07);
+    border: none;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.botones img{
+    width: 3vw;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding-top: 2vw;
+    align-items: center;
+}
+
+
+.grupo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+    text-align: center;
+    font-size: 1vw;
+
+}
+.grupo2 input{
+    width: 100%;
+    height: 1vh;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1vw;
+    padding: 15px;
+}
+
+
+
+.grupo2 select{
+    width: 100%;
+    height: 3.5vh;
+    border: none;
+    background-color: rgba(116, 93, 206, 0.09);
+    color: #2B1A70;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1vw;
+}
+
+
+
+
+#apartar {
+    width: 60%;
+    padding: 10px;
+    background-color:rgba(116, 93, 206, 0.52);
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 2.4vw;
+    font-size: 1vw;
+ 
+
+}
+
+#apartar:hover {
+    background-color:rgba(116, 93, 206, 1);
+}
+
 
 
     
+
 /* estilos pie de pagina */
 
 /* redes de el pie de pagina  */
@@ -536,3 +685,44 @@ button:hover {
 #imgOlas{
     width: 100%;
 }
+
+@media screen and (max-width: 960px) {
+   
+    .filas1{
+        display: flex; 
+        justify-content: center; 
+       
+       
+    }
+    .calendario1{
+        width: 30vw;
+       margin-left: -10vw;
+    }
+    .horas{
+        padding-top: 4vw;
+        padding-left: 5vw;
+        width: 28vw;
+
+    }
+    .horas img{
+        width: 8vw;
+ 
+        
+    }
+    
+   
+                
+}
+
+@media (max-width: 768px) {
+    .calendario1{
+        width: 32vw;
+       margin-left: -5vw;
+    }
+
+    .pieDPag{
+        margin-top: 15vw;
+    }
+}
+
+

@@ -57,31 +57,69 @@
      font-size: 2vw;
   }
   
-  /* estilos de el menu  */
-  .apartadoEmergencia{
-      display: flex;
-      gap: 1vw;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      padding: 0 20px ;
-  }
-  
-  .apartadoMenu{
-      height: 60px;
-      background: #0A4BAF;
-      padding: 0 20px;
-      color: #F0EBEB;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.5vw 50px;
-  }
-  
-  #imgTelefono{
-      width: 3vw;
-  
-  }
+
+
+/* estilos de el menu  */
+.apartadoEmergencia{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 20px ;
+}
+
+.apartadoMenu{
+    height: 60px;
+    background: #0A4BAF;
+    padding: 0 20px;
+    color: #F0EBEB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 50px;
+}
+
+#imgTelefono{
+    width: 3vw;
+
+}
+
+
+.menu a{
+    color: #F0EBEB;
+    text-decoration: none;
+    padding: 0 15px ;
+    transition: 0.4s;
+    font-size: 110%;
+    
+}
+
+.mostrarMenu,
+.esconderMenu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrarMenu{
+    order: 1;
+
+}
+
+.menu a:hover,
+.mostrarMenu:hover,
+.esconderMenu:hover{
+    color: #2B1A70;
+}
+
+#check{
+    display: none;
+}
+
+
+ 
   
   
   .menu a{
@@ -132,6 +170,7 @@
   
        right: -100%; 
       top: 0;
+    
       text-align: center;
       padding: 100px 0px;
       z-index: 100;
@@ -280,8 +319,8 @@
   .slider-frame{
       width: 100%;
       height: auto;
-  
       overflow: hidden;
+  
   }
   .slider-frame ul{
       display: flex;
@@ -324,49 +363,12 @@
      
   }
 
-/* slider */
-
-.slider-frame{
-    width: 100%;
-    height: auto;
-  margin-top: -0.8%;
-    overflow: hidden;
-}
-.slider-frame ul{
-    display: flex;
-    padding: 0;
-    width: 500%;
-    animation: slider 15s infinite alternate ease-in-out ;
-}
-.slider-frame li{
-    list-style: none;
-    width: 100%;
-}
-
-.slider-frame img{
-    width: 100%;
-}
-
-@keyframes slider {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-    
-    75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
-}
-
-
 /* ESTILOS QUIENES SOMOS */
 
 .imgPrincipal{
     justify-content: center;
     display: flex;
+
 }
 .imgPrincipal img{
     width: 75%;

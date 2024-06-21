@@ -113,233 +113,312 @@
     
 
 <div class="apartarCitas">
-    <form>
-        <h1>Formulario de Cita</h1>
-
-        <div class="input-group">
-            <div class="form-item">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
-            </div>
-
-            <div class="form-item">
-                <label for="tipoDoc">Tipo de documento</label>
-                <select id="tipoDoc" name="tipoDoc">
-                    <option value="cc">Cédula de Ciudadanía</option>
-                    <option value="pasaporte">Pasaporte</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="input-group">
-            <div class="form-item">
-                <label for="numDoc">Número de documento</label>
-                <input type="text" name="numDoc" id="numDoc" required placeholder="Ingrese su número de identificación">
-            </div>
-
-            <div class="form-item">
-                <label for="telefono">Contacto</label>
-                <input type="tel" name="telefono" id="telefono" required placeholder="Ingrese su número de contacto">
-            </div>
-        </div>
-
-        <div class="input-group">
-            <div class="form-item">
-                <label for="nombreMascota">Nombre de la Mascota</label>
-                <input type="text" name="nombreMascota" id="nombreMascota" required placeholder="Ingrese el nombre de su mascota">
-            </div>
-
-            <div class="form-item">
-                <label for="tipoServicio">Tipo de Servicio</label>
-                <select id="tipoServicio" name="tipoServicio">
-                    <option value="consulta">Consulta General</option>
-                    <option value="vacunacion">Vacunación</option>
-                    <option value="desparasitacion">Desparasitación</option>
-                    <option value="cirugia">Cirugía</option>
-                    <option value="otro">Otro</option>
-                </select>
-            </div>
-
-            <div class="form-item">
-                <label>Tipo de Mascota</label>
-                <div>
-                    <input type="radio" id="perro" name="tipoMascota" value="perro">
-                    <label for="perro">Perro</label>
-                    <input type="radio" id="gato" name="tipoMascota" value="gato">
-                    <label for="gato">Gato</label>
-                </div>
-            </div>
-        </div>
-
-        <div class="input-group">
-            <div class="form-item">
-                <label for="raza">Raza</label>
-                <input type="text" name="raza" id="raza" required placeholder="Ingrese la raza de su mascota">
-            </div>
-
-            <div class="form-item">
-                <label for="edad">Edad</label>
-                <input type="text" name="edad" id="edad" required placeholder="Ingrese la edad de su mascota">
-            </div>
-        </div>
-
-        <div class="input-group">
-            <div class="form-item">
-                <label for="motivoConsulta">Motivo de Consulta</label>
-                <input type="text" name="motivoConsulta" id="motivoConsulta" required placeholder="Ingrese el motivo de la consulta">
-            </div>
-
-            <div class="form-item">
-                <label for="informacionAdicional">Información Adicional</label>
-                <textarea id="informacionAdicional" name="informacionAdicional" rows="4" placeholder="Ingrese información adicional"></textarea>
-            </div>
-            <div class="calendario1">
-
-                <div class="slider-frame">
-        
-                    <ul>
-                        <li>
-                            <table class="calendario">
-                                <thead>
-                                    <caption>Mayo 2024</caption>
-                                        <tr>
-                                        <th>Lu</th>
-                                        <th>Ma</th>
-                                        <th>Mie</th>
-                                        <th>Ju</th>
-                                        <th>Vi</th>
-                                        <th>Sá</th>
-                                        <th>Do</th>
-                                    </tr>
-                                </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                        </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>6</td>
-                                                <td>7</td>
-                                                <td>8</td>
-                                                <td>9</td>
-                                                <td>10</td>
-                                                <td>11</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12</td>
-                                                <td>13</td>
-                                                <td>14</td>
-                                                <td>15</td>
-                                                <td>16</td>
-                                                <td>17</td>
-                                                <td>18</td>
-                                            </tr>
-                                            <tr>
-                                                <td>19</td>
-                                                <td>20</td>
-                                                <td>21</td>
-                                                <td>22</td>
-                                                <td>23</td>
-                                                <td>24</td>
-                                                <td>25</td>
-                                            </tr>
-                                            <tr>
-                                                <td>26</td>
-                                                <td>27</td>
-                                                <td>28</td>
-                                                <td>29</td>
-                                                <td>30</td>
-                                                <td>31</td>
-                                                <td></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        </li>
-                                
-                                <li>
-                                    <table class="calendario">
-                                    <thead>
-                                    <caption>Junio 2024</caption>
-                                    <tr>
-                                        <th>Lu</th>
-                                        <th>Ma</th>
-                                        <th>Mie</th>
-                                        <th>Ju</th>
-                                        <th>Vi</th>
-                                        <th>Sá</th>
-                                        <th>Do</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td>1</td>
-                                        <td>2</td>
-                                        <td>3</td>
-                                        <td>4</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>6</td>
-                                        <td>7</td>
-                                        <td>8</td>
-                                        <td>9</td>
-                                        <td>10</td>
-                                        <td>11</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12</td>
-                                        <td>13</td>
-                                        <td>14</td>
-                                        <td>15</td>
-                                        <td>16</td>
-                                        <td>17</td>
-                                        <td>18</td>
-                                    </tr>
-                                    <tr>
-                                        <td>19</td>
-                                        <td>20</td>
-                                        <td>21</td>
-                                        <td>22</td>
-                                        <td>23</td>
-                                        <td>24</td>
-                                        <td>25</td>
-                                    </tr>
-                                    <tr>
-                                        <td>26</td>
-                                        <td>27</td>
-                                        <td>28</td>
-                                        <td>29</td>
-                                        <td>30</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                </li>
-                                </ul>
-        
-                                        </div>
-        
-                <div class="slider-controls">
-                    <button id="prevBtn">Anterior</button>
-                    <button id="nextBtn">Siguiente</button>
-                </div>
-            </div>
-        </div>
-
-        <button type="submit">Apartar Cita</button>
+    <div class="datosTitulo1">
+        <h1>Formulario de Cita - Datos del cuidador</h1>
+    </div>
     
-</form>
+    <form>
+        <div class="filas">
+
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="huella" >
+                    <label for="nombreCuidador">Nombre</label>
+                </div>
+                <input type="text" name="nombre" required placeholder="Nombre del cuidador">
+            </div>
+            
+            
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="huella" >
+                    <label for="tipodoc">Tipo de documento</label>
+                </div>
+                
+                <select name="tipodoc" id="tipodoc">
+                    <option value="Cédula de ciudadanía">Cédula de ciudadanía 
+                        <option value="Tarjeta de identidad">Tarjeta de identidad 
+                            <option value="Cédula de extranjería">Cédula de extranjeria
+                </select>
+            </div>
+        </div>
+
+        <div class="filas">
+
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="huella" >
+                    <label for="nombreCuidador">Contacto</label>
+                </div>
+                <input type="text" name="nombre" required placeholder="Nombre del cuidador">
+            </div>
+            
+            
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="huella" >
+                    <label for="tipodoc">Número de documento</label>
+                </div>
+                <input type="text" name="numero" required placeholder="Número de documento">
+            </div>
+        </div>      
+        <br>
+        <div class="filas1">
+            <div class="calendario1">
+                    <div class="slider-controls">
+                        <button id="prevBtn"><</button>
+                        <button id="nextBtn">></button>
+                    </div>
+    
+                    <div class="slider-frame">
+                        <ul>
+                            <li>   
+                                <table class="calendario">
+                                    
+                                    <thead>
+                                        <caption>Mayo 2024</caption>
+                                            <tr>
+                                            <th>Lu</th>
+                                            <th>Ma</th>
+                                            <th>Mie</th>
+                                            <th>Ju</th>
+                                            <th>Vi</th>
+                                            <th>Sá</th>
+                                            <th>Do</th>
+                                        </tr>
+                                    </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                            </tr>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>6</td>
+                                                    <td>7</td>
+                                                    <td>8</td>
+                                                    <td>9</td>
+                                                    <td>10</td>
+                                                    <td>11</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12</td>
+                                                    <td>13</td>
+                                                    <td>14</td>
+                                                    <td>15</td>
+                                                    <td>16</td>
+                                                    <td>17</td>
+                                                    <td>18</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>19</td>
+                                                    <td>20</td>
+                                                    <td>21</td>
+                                                    <td>22</td>
+                                                    <td>23</td>
+                                                    <td>24</td>
+                                                    <td>25</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26</td>
+                                                    <td>27</td>
+                                                    <td>28</td>
+                                                    <td>29</td>
+                                                    <td>30</td>
+                                                    <td>31</td>
+                                                    <td></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            </li>
+                                    
+                                    <li>
+                                        <table class="calendario">
+                                            
+                                        <thead>
+                                        <caption>Junio 2024</caption>
+                                        <tr>
+                                            <th>Lu</th>
+                                            <th>Ma</th>
+                                            <th>Mie</th>
+                                            <th>Ju</th>
+                                            <th>Vi</th>
+                                            <th>Sá</th>
+                                            <th>Do</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>6</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>10</td>
+                                            <td>11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>13</td>
+                                            <td>14</td>
+                                            <td>15</td>
+                                            <td>16</td>
+                                            <td>17</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>20</td>
+                                            <td>21</td>
+                                            <td>22</td>
+                                            <td>23</td>
+                                            <td>24</td>
+                                            <td>25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>27</td>
+                                            <td>28</td>
+                                            <td>29</td>
+                                            <td>30</td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </li>
+                                    </ul>
+            
+                                            </div>
+            
+                    
+            </div>
+            
+
+            <div class="horas">
+                 <div class="hora">
+                    <img src="image/doce.png" alt="">
+                    <img src="image/una.png" alt="">
+                    <img src="image/dos.png" alt="">
+                </div>
+                <div class="hora">
+                    <img src="image/tres.png" alt="">
+                    <img src="image/cuatro.png" alt="">
+                    <img src="image/cinco.png" alt="">
+                </div>
+                <div class="hora">
+                    <img src="image/seis.png" alt="">
+                    <img src="image/siete.png" alt="">
+                    <img src="image/ocho.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        
+       
+
+    </form>
+
+
+        <!-- info mascota  -->
+    <div class="datosTitulo1">
+        <h1>Más detalles - sobre la mascota</h1>
+    </div>
+    <form  class="formulario">
+       
+        <div class="columnas">
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="">
+                    <label for="nombreM">Nombre</label>
+                </div>
+                <input type="text" name="nomM" placeholder="Nombre de la mascota">
+            </div>
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="">
+                    <label for="raza">Raza</label>
+                </div>
+                <input type="text" name="raza" placeholder="Raza de su mascota">
+            </div>
+            
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="">
+                    <label for="raza">Motivo de consulta</label>
+                </div>
+                <input type="text" name="motivo" placeholder="Solo un motivo">
+            </div>
+        </div>
+        <!-- zona dd info de mascotas  -->
+        <div class="columnas">
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="huella" >
+                    <label for="tipodoc">Tipo de servicio</label>
+                </div>
+                
+                <select name="tipocon" >
+                    <option value="Spa">Spa
+                        <option value="Peluqueria">Peluquería
+                            <option value="Medicina">Consulta General
+                            </select>
+            </div>
+
+            <div class="grupo2">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="">
+                    <label for="edad">Edad</label>
+                </div>
+                <input type="text" name="edad" placeholder="La edad en años de su mascota">
+            </div>
+                <button type="submit" id="apartar">Agendar Cita</button>
+        </div>
+
+        <div class="columnas">
+            <div class="grupos">
+                <div class="huellas">
+                    <img src="image/huellaazul.png" alt="">
+                    <label for="tipoM">Tipo de mascota</label>
+                </div>
+                <div class="botones">
+                    <div class="gato">
+                        <img src="image/gato 1.png" alt="">
+                        <input name="mascota" type="radio" />
+                    </div>
+                        
+                    <div class="perro">
+                    <img src="image/perro1.png" alt="">
+                        <input name="mascota" type="radio"  />
+                            
+                    </div>
+       
+                </div>  
+
+            </div>
+            <input type="textarea" placeholder="Complemente la información (OPCIONAL)" id="textTarea">
+
+        </div>
+
+    </form>
+
+    
 </div>
+
 
 <script>
 
@@ -369,5 +448,57 @@
   nextBtn.addEventListener('click', Anterior);
 </script>
 
-</body>
-</html>
+
+<!-- pie de pagina -->
+   
+<div class="pieDPag">
+    <hr>
+       <div class="encuentranos">
+           <h1>¡ENCUENTRANOS!</h1>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d32576156.09548051!2d-74.121795!3d4.668444!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b7f900194bf%3A0x8c3d01e423f55d9a!2sAnimal%20House!5e0!3m2!1ses-419!2sco!4v1717603329793!5m2!1ses-419!2sco" id="mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+           
+       </div>
+       <div class="infoPiepag">
+           <h1 id="titulo2">ANIMALS HOUSE</h1>
+           <pre id="parrafo">
+               El lugar indicado para tu mascota, donde contamos
+               con personal capacitado para cuidar y mimar
+               a tu hijo canino  o perruno. 
+               ¡Brindamos tu confianza!
+           </pre>
+           <nav class="menupie">
+               <a href="registrate.html">REGISTRATE</a>
+               <a href="servicios.html">SERVICIOS</a>
+               <a href="quienesSomos.html">QUIENES SOMOS</a>
+               <a href="citas.html">CITAS</a>
+              
+           </nav>
+           <div class="seccion1">
+           <div class="redespie">
+               <div> 
+                   <a title="Canal de youtube" href="https://www.youtube.com/watch?v=CHuN--GFcIc"  target="_blank">
+                   <img src="image/YoutubeNEGRO.png" alt="logo inicio de sesion" class="imgRedes" ></a></div>
+               <div>    
+                   <img src="image/Facebooknegro.png" alt="logo inicio de sesion" class="imgRedes Facebook">
+               </div>
+               <div>    
+                   <img src="image/instaNEGRPO.png" alt="logo inicio de sesion" class="imgRedes">
+               </div>
+               <div>    
+                   <img src="image/WASANEGRO.png" alt="logo inicio de sesion" class="imgRedes">
+               </div>
+           </div>
+       </div>
+   </div>
+           
+       <div class="logopiePag"> 
+           <img src="image/logoFINAL.png" alt="Logo" id="imgLogo">
+       </div>
+   </div>
+   
+   
+   
+   </body>
+   
+   </html>
