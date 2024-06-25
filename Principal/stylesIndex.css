@@ -166,13 +166,14 @@
 .contenedor{
 
     width: 60vw;
-    height: 70%;
-    background: #1a1010;
+   
+    background: #F0EBEB;
     justify-content: center;
    align-items: center;
    position: absolute;
-   left: 25%;
-   top:25%;
+    top: 5vw;
+    left: 20vw;
+
    position:fixed;
    overflow: hidden;
    display: grid;
@@ -183,6 +184,9 @@
 
 .imageLogin{
    width: 100vw;
+}
+#logoI{
+    width: 10vw;
 }
 .imagenLogin img{
  width: 100%;
@@ -207,7 +211,6 @@
 
 .login h2{
     text-align: left;
-    margin-left: 13%;
 
 
 }
@@ -220,24 +223,16 @@
     font-size: 100%;
 }
 
-#pata1{
- 
-    position: absolute;
-    top: 42%;
-   }
-
-   #pata2{
- 
-    position: absolute;
-    top: 57%;
-   }
-
-.patas{
-    width: 6%;
+.titulos{
     display: flex;
-    position: absolute;
-    left: 51%
-    ;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+
+}
+
+.titulos img{
+    width: 3vw;
 }
 
 input[type="text"],
@@ -255,12 +250,13 @@ input[type="submit"] {
     margin-left: 90%;
 }
 
-.pieLogin h2{
-    text-align: center;
-    margin-right: 15%;
-    font-size: 160%;
-    margin-bottom: -1.5%;
-   
+.opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 2vw;
 }
 
 a:link{
@@ -357,7 +353,8 @@ a :hover{
 
 .registro{
     display: flex;
-    width: 100%;
+    width: 20vw;
+    flex-direction: column;
 
 }
 
@@ -366,8 +363,9 @@ a :hover{
 }
 #infoRegistro{
     width: 60vw;
-    position: flex;
-    margin-left: -50%;
+    margin-left: 24vw;
+    
+
 }
 
 /* estilos para el apartado de el personal  */
@@ -524,4 +522,226 @@ a :hover{
 }
 #imgOlas{
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  
+    /* estilos ventana flotante */
+.contenedor{
+
+    width: 80vw;
+    background:#F0EBEB;
+    justify-content: center;
+   align-items: center;
+   position: absolute;
+    top: 20vw;
+    left: 10vw;
+
+   position:fixed;
+   overflow: hidden;
+   display: grid;
+   grid-template-columns: 50% 50%;  
+    display: none; 
+    text-align: center;
+}
+
+.imageLogin{
+   width: 100%;
+}
+#logoI{
+    padding-top: 1vw;
+    width: 13vw;
+}
+.imagenLogin img{
+ width: 100%;
+ height: 100%;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    display: inline-block;
+    background-color: #F0EBEB;
+    height: 100%;
+
+
+}
+
+.formulario{
+    width: 100%;
+
+   
+}
+
+
+
+#btnInicio{
+    background-color: rgba(116, 93, 206, 0.71);
+    margin-top: 3.5%;
+    width: 74%;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+
+}
+
+.titulos img{
+    width: 3vw;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 70%;
+    background-color: rgba(116, 93, 206, 0.09);
+    padding: 10px;
+    font-size: 16px;
+}
+
+#cerrar{
+    position: absolute;
+    width: 7%;
+    margin-left: 90%;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 2vw;
+    font-size: 1.5vw;
+}
+
+a:link{
+     text-decoration: none;
+     color: #2B1A70;
+    
+}
+a :hover{
+    color: #0A4BAF;
+
+}
+
+/* aqui termina el login  */
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+    /* estilos ventana flotante */
+.contenedor{
+
+    width: 80vw;
+    background: #F0EBEB;
+    justify-content: center;
+   align-items: center;
+   position: absolute;
+    top: 50vw;
+    left: 20vw;
+
+   position:fixed;
+   overflow: hidden;
+   display: grid;
+   grid-template-columns: 50% 50%;  
+    display: none; 
+    text-align: center;
+}
+
+.imageLogin{
+   width: 100vw;
+}
+#logoI{
+    width: 10vw;
+}
+.imagenLogin img{
+ width: 100%;
+ height: 100%;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    display: inline-block;
+    background-color: #F0EBEB;
+    height: 100%;
+
+
+}
+
+.formulario{
+    width: 100%;
+
+   
+}
+
+.login h2{
+    text-align: left;
+
+
+}
+
+#btnInicio{
+    background-color: rgba(116, 93, 206, 0.71);
+    margin-top: 3.5%;
+    width: 74%;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.titulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+
+}
+
+.titulos img{
+    width: 3vw;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 70%;
+    background-color: rgba(116, 93, 206, 0.09);
+    padding: 10px;
+    font-size: 16px;
+}
+
+#cerrar{
+    position: absolute;
+    width: 7%;
+    margin-left: 90%;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 2vw;
+}
+
+a:link{
+     text-decoration: none;
+     color: #2B1A70;
+    
+}
+a :hover{
+    color: #0A4BAF;
+
+}
+
+/* aqui termina el login  */
 }
