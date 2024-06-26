@@ -285,7 +285,6 @@ a :hover{
 }
 .slider-frame ul{
     display: flex;
-    padding: 0;
     width: 500%;
     animation: slider 15s infinite alternate ease-in-out ;
 }
@@ -358,6 +357,8 @@ a :hover{
 .registro{
     display: flex;
     width: 100%;
+    flex-direction: column;
+
 
 }
 
@@ -367,7 +368,7 @@ a :hover{
 #infoRegistro{
     width: 60vw;
     position: flex;
-    margin-left: -50%;
+
 }
 
 /* estilos para el apartado de el personal  */
