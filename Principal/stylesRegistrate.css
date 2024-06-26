@@ -302,48 +302,6 @@
     border-style: solid; 
 }
 
-@media screen and (max-width: 768px) {
-    .Formulario{
-        width: 60vw;
-        height: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      
-    }
-    .Formulario div{
-        margin-left: 27%;
-   
-    }
-
-
-}
-@media screen and (max-width: 480px) {
-
-    .Formulario{
-        width: 60vw;
-        height: 400px;
-        
-    }
-    #titulo1{
-        position: relative;
-        margin-top: 5%;
-        margin-left: 27.5%;
-        margin-bottom: -8%;
-         width: 45vw;
-    }
-   .pata3d{
-    width: 150%;
-    position: relative;
-    left: 30%;
-    bottom: 53%;
-   }
-    
-  
- 
-    
-}
 
 .Formulario h2{
     font-size: 1vw;
@@ -383,45 +341,75 @@
     width: 8%;
 }
 
-.pata3d{
+.huellas{
+    display: flex;
+    width: 25vw;
+   height: 3vw;
+   justify-content: center;
+   align-items: center;
+}
+.huellas img{
+    width: 3vw;
+}
+.huellas label{
+    text-align: center;
 
 }
 
 
-#pata3D{
-     width: 25%;
-    position: relative;
-    left: 25%;
-    margin-bottom: 50%;
-}
-#gatoimg{
-    width: 12%;
-    margin-top: -10%;
-    margin-left: 20%;
+.grupos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25vw;
+    text-align: center;
+    font-size: 1vw;
     
-}
-.gato{
-    margin-top: 10%;
-    margin-left: -18%;
-}
 
-.perro{
-    margin-top: -4%;
-    margin-left: 24%;
 }
-
-#perroimg{
-    width: 12%;
-    margin-top: -45%;
-    margin-bottom: 1%;
-    margin-left: 50%;}
-
-#mascota{
-    height: 820px;
+.grupos input{
+    width: 100%;
+    height: 1vh;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1vw;
+    padding: 15px;
 }
 
 
-  
+.grupos select{
+    width: 100%;
+    height: 3.5vh;
+    border: none;
+    background-color: rgba(116, 93, 206, 0.09);
+    color: #2B1A70;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1vw;
+}
+
+.botones{
+    display: flex;
+    gap: 5vw;
+    align-items: center ;
+    justify-content: center;
+}
+
+.botones input[type=radio]{
+    width: 2vw;
+    height: 2em;
+    border: 0px;
+}
+.botones img{
+    width: 3vw;
+}
+
+
+
+
+    
+
 /* estilos pie de pagina */
 
 /* redes de el pie de pagina  */
@@ -531,4 +519,46 @@
 }
 #imgOlas{
     width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .Formulario{
+        width: 60vw;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      
+    }
+    .Formulario div{
+        margin-left: 27%;
+   
+    }
+
+
+}
+@media screen and (max-width: 480px) {
+
+    .Formulario{
+        width: 60vw;
+        height: 400px;
+        
+    }
+    #titulo1{
+        position: relative;
+        margin-top: 5%;
+        margin-left: 27.5%;
+        margin-bottom: -8%;
+         width: 45vw;
+    }
+   .pata3d{
+    width: 150%;
+    position: relative;
+    left: 30%;
+    bottom: 53%;
+   }
+    
+  
+ 
+    
 }
